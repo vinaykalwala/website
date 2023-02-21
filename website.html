@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: fixed;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 350%;
+}
+
+#Home {background-color: rgb(241, 232, 215);}
+#Trending {background-color: rgb(241, 232, 215);}
+#TopRead {background-color: rgb(241, 232, 215)}
+#Recentlyadded {background-color: rgb(241, 232, 215);}
+</style>
+</head>
+<body>
+<button class="tablink" onclick="openPage('Home', this, 'red')"id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Trending', this, 'green')">Trending</button>
+<button class="tablink" onclick="openPage('TopRead', this, 'blue')">TopRead</button>
+<button class="tablink" onclick="openPage('Recentlyadded', this, 'orange')">Recentlyadded</button>
+
+<div id="Home" class="tabcontent">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>https://clicktoreads.com</title>
+</head>
+<body>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6202145240401072"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+      <script scr="..node_modules/jquery/dist/jquery.js"></script>
+      <script scr="..node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <section class="text-blue-800 body-font"> 
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="data:image/jpeg;base64,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" alt="blog">
+0                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-blue-1500 mb-1">Spirituality</h2>
+                      <h1 class="title-font text-lg font-medium text-blue-1500 mb-3">What are Chakras</h1>
+                      <p class="leading-relaxed mb-3">What are chakras and how to balance them to get a good life is explained</p>
+                      <div class="flex items-center flex-wrap ">
+                        <a class="text-blue-800 inline-flex items-center md:mb-2 lg:mb-0"> <a class href="index.html">Continue Reading</a>
+                          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                          </svg>
+                        </a>
+                        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                          </svg>1.2K
+                        </span>
+                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                          </svg>6
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://www.animalsaroundtheglobe.com/wp-content/uploads/2022/04/syed-ali-80a3A_BFeic-unsplash-800x533.jpg" alt="blog">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Facts</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Top 10 deadliest animals that kill humans every year</h1>
+                      <p class="leading-relaxed mb-3">In this article we will get to know about most threatening and brutal animals that are causing numarous deaths of a lot of people every year</p>
+                      <div class="flex items-center flex-wrap">
+                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"><a href="top 10 deadliest animals.html">Continue Reading</a>
+                          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <a href class="https://www.blogger.com/blog/post/edit/923372810814264374/2804852182716608116">Continue Reading</a> <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                          </svg>
+                        </a>
+                        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                          </svg>1.2K
+                        </span>
+                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                          </svg>6
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ytimg.com/vi/To7StATb1Qw/maxresdefault.jpg" alt="blog">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Records of India</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Top 10 Fastest Trains in India</h1>
+                      <p class="leading-relaxed mb-3">In this article we get to know about the top 10 fastest trains in India with speed and route details.</p>
+                      <div class="flex items-center flex-wrap ">
+                        <a class="text-indigo-500 inline-flex items-center md:mb-2 "></a>Continue Reading..
+                          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                          </svg>
+                        </a>
+                        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                          </svg>1.2K
+                        </span>
+                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                          <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                          </svg>6
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        <footer class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+              <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">https://clicktoreads.com</span>
+              </a>
+              <p class="mt-2 text-sm text-gray-500">The perfect and accurate information</p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 href class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Spirituality</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Fashion & Design</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Sports</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Food&Cooking</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">History</h2>
+                <nav class="list-none mb-10">
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-blue-500  tracking-widest text-sm mb-3">Technology</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Space</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Weather</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Makeup & Beauty</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Events</h2>
+                <nav class="list-none mb-10">
+                  </li>
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Movies & Enrertainment</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Travel</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">News & Current Affairs</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Education & Career</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Fitness & Yoga</h2>
+                <nav class="list-none mb-10">
+                </nav>
+              </div>
+              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Business</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Medication & Health</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Science</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Psychology</h2>
+                <nav class="list-none mb-10">
+                  <h2 class="title-font font-medium text-blue-500 tracking-widest text-sm mb-3">Books</h2>
+                <nav class="list-none mb-10">
+                  </li>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-100">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+              <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 clicktoreads.com
+                <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@clicktoreadsTeam</a>
+              </p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                <a class="text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+          </footer></section>
+          </section>
+        </footer>
+</div>
+<div id="Trending" class="tabcontent">
+  <h3>Trending</h3>
+  <p>Here you can find Trending topics of all time!</p> 
+  <section class="text-gray-600 body-font"><a style="background-color:rgb(236, 132, 14);">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Trending and author's pick</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Special focus on top most important stories of all time</h1>
+            <p class="leading-relaxed mb-3">Most of the life threatening factors of human beings are from nature only. Read to know more</p>
+            <a href class="text-indigo-500 inline-flex items-center">Contine Reading
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Today's Special</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Most Spoken lanugages across India</h1>
+            <p class="leading-relaxed mb-3">Do you know how many languages are being used in India?? Take a look at it and have bit more knowledge</p>
+            <a class="text-indigo-500 inline-flex items-center"></a><a class href="language.html">Continue Reading</a>
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/3">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Trending of the week</h2>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Historical Places in India</h1>
+            <p class="leading-relaxed mb-3">In this article we get to know about the historical places in India</p>
+            <a href class="text-indigo-500 inline-flex items-center">Contine Reaading..</a>
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+              <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                </svg>6
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div id="TopRead" class="tabcontent">
+  <h3>TopRead</h3>
+  <p>In this page you can find the Top read articles</p>
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="-my-8 divide-y-2 divide-gray-100">
+        <div class="py-8 flex flex-wrap md:flex-nowrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="font-semibold title-font text-gray-700">Top Read</span>
+            <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Eatrthquakes</h2>
+            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+            <a href class="text-indigo-500 inline-flex items-center mt-4">Continue Reading
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="py-8 flex flex-wrap md:flex-nowrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="font-semibold title-font text-gray-700">Trending</span>
+            <span class="mt-1 text-gray-500 text-sm">12 February 2023</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Parenting and it's Challenges</h2>
+            <p class="leading-relaxed">Parenting has now become a difficult task to do nowadays. Here are some tips to get better as good and ideal parent.</p>
+            <a href class="text-indigo-500 inline-flex items-center mt-4"><a class href="101001.html">Continue Reading</a>
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="py-8 flex flex-wrap md:flex-nowrap">
+          <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+            <span class="font-semibold title-font text-gray-700">Top Pick of the day</span></a>
+            <span class="text-sm text-gray-500">15 February 2023</span>
+          </div>
+          <div class="md:flex-grow">
+            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Women's Premier League</h2>
+            <p class="leading-relaxed">Women's IPL is one of the hot topics around the globe, with a lot of big existing and franchizes participating in bidding to get the teams for a lot of money...Here are some of the facts about WIPL </p>
+            <a href class="text-indigo-500 inline-flex items-center mt-4"><a class href="105001.html">Continue Reading</a>
+              <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="Recentlyadded" class="tabcontent">
+  <h3>Recentlyadded</h3>
+  <p>Here you can find the recently added articles</p>
+</div>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
